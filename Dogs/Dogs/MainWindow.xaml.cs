@@ -24,6 +24,7 @@ namespace Dogs
         public MainWindow()
         {
             InitializeComponent();
+            App.mainFrame = main_frame;
             main_frame.Navigate(new nav_page());
         }
     }

@@ -14,25 +14,41 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-         <!--лого-->
-        <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Image></Image>
-            <TextBlock FontSize="30">Краткое описание</TextBlock>
-        </StackPanel>
+        <Image x:Name="Wall" Source="/DimaResources/Wall.gif" Grid.ColumnSpan="3" Stretch="Fill"></Image>
+        <!--лого-->
+        <Image Source="/DimaResources/NameCo.png" Margin="-350,-470,0,0" Grid.ColumnSpan="2" Width="570" MouseLeftButtonDown="Logo_MouseLeftButtonDown"></Image>
+        <Image x:Name="Logo" Source="/DimaResources/Dog_Logo.gif" Width="600" Grid.ColumnSpan="2" Margin="-300,200,0,0" MouseLeftButtonDown="Logo_MouseLeftButtonDown"></Image>
+        <Image Margin="-350,170,0,0" Grid.ColumnSpan="2" Source="/DimaResources/Card_1.png" Grid.Column="1" x:Name="Card1"></Image>
+        <Image Width="200" Margin="420,-330,0,0" Grid.ColumnSpan="2" x:Name="Dog1" Source="/DimaResources/Dog_Button.png"></Image>
 
-        <Border  Grid.Column="1" Width="350" Height="450" Background="#FFD8C3A4">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock FontSize="30">Собаки</TextBlock>
-            </StackPanel>
-        </Border>
+        <Image Margin="0,170,0,0" Source="/DimaResources/Card_1.png" x:Name="Card2" Grid.Column="2"></Image>
+        <Image Width="200" Margin="770,-330,0,0" Grid.ColumnSpan="3" x:Name="Dog2" Source="/DimaResources/Dog_Button.png"></Image>
 
-        <Border  Grid.Column="2" Width="350" Height="450" Background="#FFD8C3A4">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock FontSize="30">Ветеринары</TextBlock>
-            </StackPanel>
-        </Border>
-
-        <Button Grid.ColumnSpan="3" Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,30,0">Войти</Button>
+        <!--<Rectangle Fill="Black" Grid.ColumnSpan="3" Width="700" Height="200" Opacity="0" Margin="350,-320,0,0"></Rectangle>-->
+        <Image Grid.Column="1" Width="250" Margin="130,-90,0,0" Source="/DimaResources/NiceDog.png"></Image>
+        <Image Grid.Column="2" Width="200" Margin="0,-90,0,0" Source="/DimaResources/Cross.png"></Image>
+        <TextBlock FontSize="30" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,250,30,0" FontWeight="Bold" Width="300" Text="ВЫБЕРИТЕ СЕБЕ ЛУЧШЕГО ДРУГА И СПУТНИКА НА ВСЮ ЖИЗНЬ" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+        <TextBlock FontSize="30" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,250,85,0" FontWeight="Bold" Width="300" Text="ЗАПОЛНИТЕ АНКЕТУ ДЛЯ ЛЕЧЕНИЯ ВАШЕГО ПИТОМЦА" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+        <Rectangle Fill="Black" Grid.ColumnSpan="3" Width="320" Height="510" Opacity="0" Margin="930,190,0,0" x:Name="Trigger1" MouseEnter="Card_MouseEnter" MouseLeave="Card_MouseLeave"></Rectangle>
+        <Rectangle Fill="Black" Grid.ColumnSpan="3" Width="320" Height="510" Opacity="0" Margin="120,190,0,0" x:Name="Trigger2" MouseEnter="Card_MouseEnter" MouseLeave="Card_MouseLeave"></Rectangle>
+        <Button  MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" x:Name="EnterBtn" Style="{StaticResource NoBlue}" Grid.ColumnSpan="3" BorderThickness="0" Width="200" Height="80" Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,30,0" Click="EnterBtn_Click">
+            <Grid>
+                <Image Source="/DimaResources/Button_1.png"></Image>
+                <TextBlock Text="ВОЙТИ" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="UltraBold"></TextBlock>
+            </Grid>
+        </Button>
+        <Button x:Name="DogsBtn" Style="{StaticResource NoBlue}" Grid.ColumnSpan="3" BorderThickness="0" Width="250" Height="110" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="110,530,0,0" Click="DogsBtn_Click" MouseEnter="DogsBtn_MouseEnter" MouseLeave="DogsBtn_MouseLeave">
+            <Grid>
+                <Image Source="/DimaResources/Button_1.png"></Image>
+                <TextBlock Text="ПОСМОТРЕТЬ" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="UltraBold"></TextBlock>
+            </Grid>
+        </Button>
+        <Button x:Name="HelpBtn" Style="{StaticResource NoBlue}" Grid.ColumnSpan="3" BorderThickness="0" Width="250" Height="110" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="970,530,30,0" Click="HelpBtn_Click" MouseEnter="DogsBtn_MouseEnter" MouseLeave="DogsBtn_MouseLeave">
+            <Grid>
+                <Image Source="/DimaResources/Button_1.png"></Image>
+                <TextBlock Text="ЗАПОЛНИТЬ" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="UltraBold"></TextBlock>
+            </Grid>
+        </Button>
 
     </Grid>
 </Page>
