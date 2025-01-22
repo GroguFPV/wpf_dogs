@@ -32,7 +32,7 @@
             <TextBlock FontFamily="pack://application:,,,/DimaResources/#Skellyman" FontWeight = "Bold" Text="Тестирование" FontSize="30" Margin="0,0,80,0"></TextBlock>
             <TextBlock FontFamily="pack://application:,,,/DimaResources/#Skellyman" FontWeight = "Bold" Text="Бэкэнд" FontSize="30" Margin="0,0,80,0"></TextBlock>
             <TextBlock FontFamily="pack://application:,,,/DimaResources/#Skellyman" FontWeight = "Bold" Text="Бэкэнд" FontSize="30" Margin="0,0,140,0"></TextBlock>
-            <TextBlock FontFamily="pack://application:,,,/DimaResources/#Skellyman" FontWeight = "Bold" Text="БД" FontSize="30" Margin="0,0,120,0"></TextBlock>
+            <TextBlock FontFamily="pack://application:,,,/DimaResources/#Skellyman" FontWeight = "Bold" Text="БД" FontSize="30" Margin="0,0,120,0"></TextBlock> 
             <TextBlock FontFamily="pack://application:,,,/DimaResources/#Skellyman" FontWeight = "Bold" Text="Структура" FontSize="30" Margin="0,0,0,0"></TextBlock>
         </StackPanel>
     </Grid>
