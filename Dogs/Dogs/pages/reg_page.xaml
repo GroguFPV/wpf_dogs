@@ -4,6 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Dogs.pages"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="1400"
       Title="reg_page">
@@ -13,30 +15,35 @@
             <TextBlock FontSize="40" Margin="0,0,0,50" HorizontalAlignment="Center">Регистрация</TextBlock>
 
             <!--Фамилия-->
-            <TextBox Width="400" BorderBrush="Black" Height="30" Background="#FFDFDCD3"
+            <TextBox FontSize="30" materialDesign:HintAssist.Hint="Фамилия"
+                Width="400" BorderBrush="Black" Height="50" Background="#FFDFDCD3"
                      BorderThickness="0,0,0,2" x:Name="SurnameTb"
                      Margin="0,0,0,5"></TextBox>
 
             <!--Имя-->
-            <TextBox Width="400" BorderBrush="Black" Height="30" Background="#FFDFDCD3"
+            <TextBox FontSize="30" materialDesign:HintAssist.Hint="Имя"
+                Width="400" BorderBrush="Black" Height="50" Background="#FFDFDCD3"
                      BorderThickness="0,0,0,2" x:Name="nameTb"
                      Margin="0,0,0,5"></TextBox>
 
-           
-            <TextBox Width="400" BorderBrush="Black" Height="30" Background="#FFDFDCD3"
+
+            <TextBox FontSize="30" materialDesign:HintAssist.Hint="Отчество"
+                Width="400" BorderBrush="Black" Height="50" Background="#FFDFDCD3"
                      BorderThickness="0,0,0,2" x:Name="PatronymicTb"
                      Margin="0,0,0,5"></TextBox>
 
-            <TextBox Width="400" BorderBrush="Black" Height="30" Background="#FFDFDCD3"
+            <TextBox FontSize="30" materialDesign:HintAssist.Hint="Логин" 
+                Width="400" BorderBrush="Black" Height="50" Background="#FFDFDCD3"
                      BorderThickness="0,0,0,2" x:Name="LoginTb"
                      Margin="0,0,0,5"></TextBox>
 
-            <PasswordBox BorderBrush="Black" Height="30" Background="#FFDFDCD3"
+            <PasswordBox FontSize="30" materialDesign:HintAssist.Hint="Пароль"
+                BorderBrush="Black" Height="50" Background="#FFDFDCD3"
                      BorderThickness="0,0,0,2"
                          x:Name="PasswordTb"></PasswordBox>
 
             <Button Width="350" Height="50"
-                    FontSize="30" Style="{StaticResource ButtonStyle}"
+                    FontSize="30" Style="{StaticResource ButtonStyle20}"
                     x:Name="reg_btn" Content="Зарегистрироваться"
                     Background="#FFEA5850" Margin="0,20,0,0"/>
         </StackPanel>

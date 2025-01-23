@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Dogs.pages
 {
     /// <summary>
-    /// Логика взаимодействия для dogs_list_page.xaml
+    /// Логика взаимодействия для employee_nav_page.xaml
     /// </summary>
-    public partial class dogs_list_page : Page
+    public partial class employee_nav_page : Page
     {
-        public dogs_list_page()
+        public employee_nav_page()
         {
             InitializeComponent();
         }
